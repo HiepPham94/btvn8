@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        //bài 1.
+            let age = +prompt ("Hãy nhập số tuổi của bạn");
+        if (age>=18) {
+            console.log("Bạn đủ tuổi xem phim 18+");
+        } else {
+            console.log("Bạn về học bài đi");
+        }
+
+        //bài 2.
+        let hour = +prompt ("hãy nhập giờ bạn muốn");
+        if (hour<18) {
+            console.log("Good day");
+        } else {
+            if (hour<=24) {
+                console.log("Good evening");
+            } else {
+                console.log("trong một ngày không có thời gian này");
+
+            }
+        }
+
+        //bài 3.
+        let hours = +prompt ("Bây giờ là mấy giờ");
+        if (hours<10) {
+            console.log("Good morning");
+        } else {
+            if (hours<=20) {
+            console.log("Good day");
+            } else {
+                if (hours<=24) {
+                    console.log("Good evening");
+                } else {
+                    console.log("trong một ngày không có thời gian này");
+                }
+            }
+        }
+
+        //bài 4.
+        let number = +prompt ("Hãy nhập số để kiểm tra số lẻ, số chẵn");
+        if (number%2===0) {
+            console.log("Số bạn nhập là số chẵn");
+        } else {
+            console.log("Số bạn nhập là số lẻ");
+        }
+
+        //bài 5.
+        let number1 = +prompt ("Hãy nhập số để kiểm tra số lẻ, số chẵn 2");
+        switch (number1%2) {
+            case 0:
+            console.log("Số bạn nhập là số chẵn");
+            break;
+            default:
+            console.log("Số bạn nhập là số lẻ");
+        }
+
+        //bài 6.
+        let color = prompt("Bạn hãy nhập tên màu bạn thích");
+        if (color="Xanh") {
+            console.log('Màu xanh');
+        } else {
+            if (color="Vàng") {
+                console.log("Màu vàng");
+            } else {
+                if (color="Đỏ") {
+                    console.log("màu đỏ");
+                } else {
+                    console.log("MÀU BẠN CHỌN KHÔNG ĐƯỢC HỖ TRỢ");
+                }
+            }
+        }
+
+        // bài 7.
+        let số = +prompt ("Hãy nhập một số nguyên bất kỳ bạn thích");
+        if (số>0) {
+            console.log("Số của bạn là số nguyên dương");
+        } else {
+            if (số<0) {
+                console.log("Số của bạn là số nguyên âm");
+            } else {
+                console.log("Số của bạn là số 0");
+            }
+        }
+
+        //bài 8.
+        let weight = +prompt ("Hãy nhập cân nặng của bạn (Đơn vị kg)");
+        let height = +prompt ("Hãy nhập chiều cao của bạn (Đơn vị m)");
+        let bmi = weight/(height*height);
+        if (bmi<=18.5) {
+            console.log("Bạn có chỉ số BMI cân nặng thấp (gầy) theo tiêu chuẩn WHO");
+        } else {
+            if (bmi<=24.9) {
+                console.log("Bạn có chỉ số BMI bình thường theo tiêu chuẩn WHO");
+            } else {
+                    if (bmi<=29.9) {
+                        console.log("Bạn có chỉ số BMI, thừa cân tiền béo phì theo tiêu chuẩn WHO");
+                    } else {
+                        if (bmi<=34.9) {
+                            console.log("Bạn có chỉ số BMI béo phì độ I theo tiêu chuẩn WHO");
+                        } else {
+                            if (bmi<=39.9) {
+                                console.log("Bạn có chỉ số BMI béo phì độ II theo tiêu chuẩn WHO");
+                            } else {
+                                console.log("Bạn có chỉ số BMI béo phì độ III theo tiêu chuẩn WHO");
+                            }
+                        }
+                    }                    
+            } 
+        }
+        if (bmi<18.5) {
+            console.log("Bạn có chỉ số BMI cân nặng thấp (gầy) theo tiêu chuẩn IDI&WPRO");
+        } else {
+            if (bmi<=22.9) {
+                console.log("Bạn có chỉ số BMI bình thường theo tiêu chuẩn IDI&WPRO");
+            } else {
+                 if (bmi<=24.9) {
+                        console.log("Bạn có chỉ số BMI thừa cân, tiền béo phì theo tiêu chuẩn IDI&WPRO");
+                    } else {
+                        if (bmi<=29.9) {
+                            console.log("Bạn có chỉ số BMI béo phì độ I theo tiêu chuẩn IDI&WPRO");
+                        } else {
+                                console.log("Bạn có chỉ số BMI béo phì độ III theo tiêu chuẩn IDI&WPRO");
+                        }
+                    }
+            }                    
+        }
+
+        // bài 9.
+        let math = +prompt ("hãy nhập điểm môn Toán của bạn");
+        let physics = +prompt ("hãy nhập điểm môn Lý của bạn");
+        let chemistry = +prompt ("hãy nhập điểm môn Hóa của bạn");
+        let literature = +prompt ("hãy nhập điểm môn Văn của bạn");
+        let history = +prompt ("hãy nhập điểm môn Sử của bạn");
+        let geography = +prompt ("hãy nhập điểm môn Sử của bạn");
+        let medium = (math+physics+chemistry+literature+history+geography)/6;
+        if (medium<5) {
+            console.log("Bạn xếp loại Yếu");
+        } else { 
+            if (medium<=6.4) {
+                console.log("Bạn xếp loại Trung bình");
+            } else { 
+                if (medium<=7.9) {
+                    console.log("Bạn xếp loại Khá");
+                } else {
+                    if (medium<=10) {
+                        console.log("Bạn xếp loại giỏi");
+                    } else {
+                        console.log("Bạn đã nhập điểm không đúng");
+                    }
+                }
+            } 
+        }
+
+        // bài 10.
+        let month = +prompt("Hãy nhập tháng bạn muốn kiểm tra");
+        let year = +prompt("Hãy nhập năm của tháng bạn muốn kiểm tra");
+        if (month==1) {
+            console.log(`Trong tháng ${month} có 31 ngày`);
+        } else { 
+            if (month==2) {
+               switch (year%4) {
+                case 0:
+                    console.log(`Trong tháng ${month} có 29 ngày`);
+                    break;
+                default:
+                    console.log(`Trong tháng ${month} có 28 ngày`)
+                    break;
+               }
+            } else {
+                if (month==3) {
+                    console.log(`Trong tháng ${month} có 31 ngày`);
+                } else {
+                    if (month==4) {
+                        console.log(`Trong tháng ${month} có 30 ngày`);
+                    } else {
+                        if (month==5) {
+                            console.log(`Trong tháng ${month} có 31 ngày`);
+                        } else {
+                            if (month==6) {
+                                console.log(`Trong tháng ${month} có 30 ngày`);
+                            } else {
+                                if (month==7) {
+                                    console.log(`Trong tháng ${month} có 31 ngày`);
+                                } else {
+                                    if (month==8) {
+                                        console.log(`Trong tháng ${month} có 31 ngày`);
+                                    } else {
+                                        if (month==9) {
+                                            console.log(`Trong tháng ${month} có 30 ngày`);
+                                        } else {
+                                            if (month==10) {
+                                                console.log(`Trong tháng ${month} có 31 ngày`);
+                                            } else {
+                                                if (month==11) {
+                                                    console.log(`Trong tháng ${month} có 30 ngày`);
+                                                } else {
+                                                    if (month==12) {
+                                                        console.log(`Trong tháng ${month} có 31 ngày`);
+                                                    } else {
+                                                        console.log(`Không có tháng ${month}`);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+</script>
+</body>
+</html>
